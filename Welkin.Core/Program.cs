@@ -18,6 +18,8 @@ namespace Avanzar.Welkin.Core
         private static IUnityContainer _container;
         static void Main()
         {
+            Register();
+
             var config = new JobHostConfiguration
             {
                 JobActivator = new Activator(_container)
@@ -30,6 +32,15 @@ namespace Avanzar.Welkin.Core
             host.RunAndBlock();
         }
 
+        public static void Register()
+        {
+            using (_container = new UnityContainer())
+            {
+                //Registering all Entities
+            }
+        }
+
+        //For Testing
         public static void SendMessage(string msg)
         {
 

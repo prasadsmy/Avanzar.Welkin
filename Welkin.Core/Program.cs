@@ -44,7 +44,7 @@ namespace Avanzar.Welkin.Core
         public static void SendMessage(string msg)
         {
 
-            var credentials = new StorageCredentials("hbotdev", "Zk4FUJTCdm2ViP8xplmG/Zm1Vzop9g6u+1Ey86hl2wG5C5ZuIjZX1Eta1gjLscJDjRqglToXzHL+pWnzgxpCRg==");
+            var credentials = new StorageCredentials("welkinstoragedev", "Zk4FUJTCdm2ViP8xplmG/Zm1Vzop9g6u+1Ey86hl2wG5C5ZuIjZX1Eta1gjLscJDjRqglToXzHL+pWnzgxpCRg==");
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(ConfigurationManager.ConnectionStrings["AzureWebJobsStorage"].ConnectionString);
 
             // Create the queue client
